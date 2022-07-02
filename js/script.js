@@ -13,7 +13,7 @@ let с = document.forms["mainForm"]["email"].value;
 
 
 if (a == "") {
-alert("Укажите ваши Фамилия Имя Отчество ");
+alert("Укажите ваши Фамилию Имя Отчество ");
 return false;
 }
 
