@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>ИНГОССТРАХ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile-style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-logo">
+      <h1>ИНГОССТРАХ</h1>
+    </div>
+    <section class="header-info">
+      <div class="header-info__phone">
+        <img src="img/h-phone.svg" alt="Номер телефона">
+        <p class="header-info__text"><a>8 800 200 29 47</a></p>
+      </div>
+      <div class="header-info__file">
+        <img src="img/h-file.svg" alt="Правила акции">
+        <p class="header-info__text"><a>Правила акции</a></p>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="main-banner">
+      <div class="main-banner__info">
+        <p class="banner-info">Получите</p>
+        <p class="banner-info__color-size">73 дня экспресс-каско<br>
+          и страхования имущества</p>
+        <p class="banner-info">в честь нашего 73-летия!</p>
+      </div>
+      <div class="main-banner__img">
+        <picture>
+          <source srcset="img/m-banner-min.png" type="image/png" media="(max-width: 740px)" >
+          <source srcset="img/main-banner-min.png" type="image/png" media="(min-width: 740px)" >
+          <img src="main-banner-min.png" alt="73 года c Вами!">
+        </picture>
+      </div>
+    </section>
+    <section class="main-form">
+      <picture class="main-form__img-fon">
+        <source srcset="img/m-fon-min.png" type="image/png" media="(max-width: 740px)">
+        <source srcset="img/fon-min.png" type="image/png" media="(min-width: 1200px)">
+          <img src="img/fon-min.png" alt="">
+      </picture>
+      <div class="main-form__content">
+        <p class="content__title">73 года c Вами!</p>
+        <p class="content__title-desc">С теми, кто дорожит своими достижениями</p>
+        <form id="form" class="content__form"  name="mainForm"  onsubmit="return">
+
+          <input type="text" id="form-name" name="name" placeholder="Ф.И.О" >
+          <input type="tel" id="form-phone" name="phone" placeholder="+7">
+          <input type="text" id="form-email" name="email" placeholder="Email" >
+
+          <input class="content__form-button" type="submit" name="Забронировать" value="Забронировать" >
+          <div class="form__checkbox">
+            <input type="checkbox" id="agree" name="agreement">
+            <label for="agree">Подтверждаю согласие на обработку персональных данных и получение иинформации о других продуктах и услугах СПАО «Ингосстрах» и его партнеров.</label>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="main-info">
+      <section class="main-info__left">
+        <h2 class="main-info__title pc">Экспресс-КАСКО</h2>
+        <div class="main-info__content">
+        <div class="main-info__text">
+          <h2 class="main-info__title mobile">Экспресс-КАСКО</h2>
+          <p class="main-info__title-two">Доступно и просто:</p>
+          <ul class="main-info__list">
+            <li class="list__item">Выезд эксперта на место страхового случая;</li>
+            <li class="list__item">Техническая помощь на дороге;</li>
+            <li class="list__item">Страхование личных вещей в автомобиле.</li>
+          </ul>
+          <p class="main-info__link"><a>Забронировать <span>→</span></a></p>
+          </div>
+          <picture class="main-info__img">
+            <source srcset="img/m-info-one-min.png" type="image/png" media="(max-width: 740px)">
+            <source srcset="img/info-one-min.png" type="image/png" media="(min-width: 740px)">
+            <img src="img/info-one-min.png" alt="">
+          </picture>
+
+        </div>
+      </section>
+      <section class="main-info__right">
+        <h2 class="main-info__title pc">Страхование имущества</h2>
+        <div class="main-info__content">
+          <div class="main-info__text">
+            <h2 class="main-info__title mobile">Страхование имущества</h2>
+          <p class="main-info__title-two">Наши преимущества:</p>
+          <ul class="main-info__list">
+            <li class="list__item">Страхование нетиповых рисков (например, повреждение имущества животными)​;</li>
+            <li class="list__item">Бесплатная профессиональная оценка имущества, урегулированию убытков.</li>
+          </ul>
+          <p class="main-info__link main-info__link-noactive"><a>Забронировать <span>→</span></a></p>
+        </div>
+        <picture class="main-info__img">
+          <source srcset="img/m-info-two-min.png" type="image/png" media="(max-width: 740px)">
+          <source srcset="img/info-two-min.png" type="image/png" media="(min-width: 740px)">
+          <img src="img/info-two-min.png" alt="">
+        </picture>
+      </div>
+      </section>
+    </section>
+
+    <footer class="footer">
+      <h4 class="footer-title">Контактная информация:</h4>
+      <div class="footer-social social-button">
+        <img src="img/vk.svg" alt="Вконтакте">
+        <img src="img/youtube.svg" alt="YoyTube">
+      </div>
+
+<!-- POPUP ------------------>
+
+<div id="overlay"></div>
+<div class="popup">
+  <div class="close">╳</div>
+Спасибо, Ваша заявка принята
+</div>
+<!--  -->
+
+    </footer>
+  </main>
+
+
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
