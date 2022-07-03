@@ -9,7 +9,8 @@ form.onsubmit = function(evt) {
 
 let a = document.forms["mainForm"]["name"].value;
 let b = document.forms["mainForm"]["phone"].value;
-let с = document.forms["mainForm"]["email"].value;
+let c = document.forms["mainForm"]["email"].value;
+let d = document.forms["mainForm"]["agreement"].checked;
 
 
 if (a == "") {
@@ -28,14 +29,20 @@ return false;
 }
 
 
-if (с == "") {
+if (c == "") {
 alert("Укажите email");
 return false;
 }
-// if (!/^[a-z0-9][a-z0-9\._-]*[a-z0-9]*@([a-z0-9]+([a-z0-9-]*[a-z0-9]+)*\.)+[a-z]+/i.test(c)) {
-// alert("Email указан неверно. Проверьте правильность ввода.");
-// return false;
-// }
+if (!/^[a-z0-9][a-z0-9\._-]*[a-z0-9]*@([a-z0-9]+([a-z0-9-]*[a-z0-9]+)*\.)+[a-z]+/i.test(c)) {
+ alert("Email указан неверно. Проверьте правильность ввода.");
+ return false;
+}
+
+if ( !d ){
+  alert("Подтвердите согласие на обработку персональных данных");
+  return false;
+}
+
 
  popUp.style.display='block';
   evt.preventDefault();
