@@ -130,14 +130,14 @@ section.main-info__right .main-info__text {
     padding-top: 15px;
 }
 .popup {
-    /* display: none; */
+    display: none;
     BACKGROUND: #ffffff;
     position: absolute;
     top: 25%;
     left: 0;
     right: 0;
-    width: 341px;
-    height: 167px;
+    width: 320px;
+    height: 147px;
     text-align: center;
     padding: 133px 0 13px;
     font-size: 24px;

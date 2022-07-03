@@ -393,7 +393,7 @@ li.list__item::before {
 div#overlay {
  display: none;
    width: 100%;
-   height: 120vh;
+       height: 100%;
    background: #00000057;
    position: absolute;
    top: 0;
